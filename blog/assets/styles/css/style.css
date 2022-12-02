@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html {
+  font-size: 14px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  background: linear-gradient(to bottom, #5c4d7d, #455e89, #2e6f95);
+}
+#home > header {
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  padding: 2vh 0 2vh 0;
+  background-color: #403657;
+  width: 100%;
+}
+#home > aside {
+  grid-column: 3/4;
+  color: white;
+  padding: 2vh 0 2vh 1vw;
+}
+#home > aside > header {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+#home > aside > section {
+  padding: 1vh 0 1vh 0;
+}
+#home > aside > section > header {
+  padding: 1vh 0 1vh 0;
+}
+#home > aside > section > ul > li {
+  font-size: 0.8em;
+  line-height: 4vh;
+}
+#home > main {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+  background-color: white;
+}
+#home > main > header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 5vh 0 5vh 0;
+}
+#home > main > section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
+  padding: 1vh 1vw 1vh 1vw;
+}
+#home > main > section > article {
+  justify-self: center;
+  align-self: center;
+}
+#home > main > section > article > header {
+  color: #5d4d7d;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#home > main > section > article > header > h3 {
+  padding: 2vh 0 2vh 0;
+}
+#home > main > section > article > header > figure > img {
+  width: 100%;
+}
+#home > main > section > article > section > h4 {
+  padding-bottom: 2vh;
+}
+#home > main > section > article > section > p {
+  padding-bottom: 2vh;
+  font-size: 0.9em;
+}
+#home > main > section > article > footer {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
