@@ -1,0 +1,45 @@
+@import "var";
+
+body {
+    header {
+        height:calc(100vh/2);
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        & > section:first-of-type {
+            background: linear-gradient(to top, $darkBlue, $blue , $green);
+        }
+
+        & > section:nth-of-type(2) {
+            background: radial-gradient($darkBlue, $blue, $green);
+        }
+
+        & > section:last-of-type {
+            background: radial-gradient($green, $blue, $darkBlue);
+        }
+    }
+
+    main {
+        height:calc(100vh/2);
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        & > section:first-of-type {
+            background: radial-gradient($pink, $yellow, $green, $blue, $darkBlue);
+        }
+
+        & > section:nth-of-type(2) {
+            background: radial-gradient($pink, $yellow, $green, $blue, $darkBlue, $blue, $green, $yellow, $pink);
+
+        }
+
+        & > section:last-of-type {
+            background:linear-gradient(to bottom left, $darkBlue, $blue, $green, $yellow, $pink );
+        }
+    }
+
+
+    section {
+        border: 1px dotted grey;
+    }
+}

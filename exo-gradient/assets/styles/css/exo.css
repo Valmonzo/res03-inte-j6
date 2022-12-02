@@ -1,0 +1,33 @@
+body header {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body header > section:first-of-type {
+  background: linear-gradient(to top, #073b4c, #118ab2, #06d6a0);
+}
+body header > section:nth-of-type(2) {
+  background: radial-gradient(#073b4c, #118ab2, #06d6a0);
+}
+body header > section:last-of-type {
+  background: radial-gradient(#06d6a0, #118ab2, #073b4c);
+}
+body main {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body main > section:first-of-type {
+  background: radial-gradient(#ef476f, #ffd166, #06d6a0, #118ab2, #073b4c);
+}
+body main > section:nth-of-type(2) {
+  background: radial-gradient(#ef476f, #ffd166, #06d6a0, #118ab2, #073b4c, #118ab2, #06d6a0, #ffd166, #ef476f);
+}
+body main > section:last-of-type {
+  background: linear-gradient(to bottom left, #073b4c, #118ab2, #06d6a0, #ffd166, #ef476f);
+}
+body section {
+  border: 1px dotted grey;
+}
+
+/*# sourceMappingURL=exo.css.map */
