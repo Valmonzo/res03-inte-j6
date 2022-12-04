@@ -95,7 +95,7 @@ body {
 }
 #home > aside > section > ul > li {
   font-size: 0.8em;
-  line-height: 4vh;
+  line-height: 2vh;
 }
 #home > main {
   grid-column: 2/3;
@@ -142,6 +142,104 @@ body {
 #home > main > section > article > footer {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+#article {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  background: linear-gradient(to bottom, #5c4d7d, #455e89, #2e6f95);
+}
+#article > header {
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  padding: 2vh 0 2vh 0;
+  background-color: #403657;
+  width: 100%;
+}
+#article > aside {
+  grid-column: 3/4;
+  color: white;
+  padding: 2vh 0 2vh 1vw;
+}
+#article > aside > header {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+#article > aside > section {
+  padding: 1vh 0 1vh 0;
+}
+#article > aside > section > header {
+  padding: 1vh 0 1vh 0;
+}
+#article > aside > section > ul > li {
+  font-size: 0.8em;
+  line-height: 2vh;
+}
+#article > main {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+  background-color: white;
+}
+#article > main > header > h2 {
+  font-size: 2.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #286b91;
+  text-align: center;
+  padding: 3vh 0 3vh 0;
+}
+#article > main > section {
+  display: grid;
+  row-gap: 1vh;
+  padding: 1vh 0 2vh 0;
+}
+#article > main > section > section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1vw;
+  width: 95%;
+  justify-self: center;
+  align-self: center;
+}
+#article > main > section > section > section:first-of-type {
+  align-self: center;
+  justify-self: center;
+}
+#article > main > section > section > section:first-of-type > figure > img {
+  width: 100%;
+}
+#article > main > section > section > section:last-of-type {
+  display: grid;
+}
+#article > main > section > section > section:last-of-type > header {
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: bold;
+  height: 10%;
+  align-self: center;
+}
+#article > main > section > section > section:last-of-type > p {
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  height: 90%;
+}
+#article > main > section > section:nth-of-type(2) > section:first-of-type {
+  grid-column: 2/3;
+}
+#article > main > section > section:nth-of-type(2) > section:last-of-type {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#article > footer {
+  height: 10vh;
 }
 
 /*# sourceMappingURL=style.css.map */

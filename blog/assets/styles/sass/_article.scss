@@ -1,0 +1,133 @@
+#article {
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    background: linear-gradient(to bottom, #5c4d7d,  #455e89, #2e6f95);
+
+    & > header {
+        grid-column: 1/4;
+        justify-self:center;
+        align-self:center;
+        font-size:1.6em;
+        text-align:center;
+        text-transform:uppercase;
+        color:white;
+        font-weight:bold;
+        padding: 2vh 0 2vh 0;
+        background-color:#403657;
+        width:100%;
+    }
+
+    & > aside {
+        grid-column: 3/4;
+        color:white;
+        padding:2vh 0 2vh 1vw;
+
+        & > header {
+            text-transform:uppercase;
+            font-size:1.1em;
+
+        }
+
+        & > section {
+            padding: 1vh 0 1vh 0;
+
+            & > header {
+                padding: 1vh 0 1vh 0;
+            }
+
+            & > ul {
+                & > li {
+                    font-size:0.8em;
+                    line-height:2vh;
+                }
+            }
+        }
+
+    }
+
+    & > main {
+        grid-column: 2/3;
+        align-self:center;
+        justify-self:center;
+        background-color:white;
+
+        & > header {
+            & > h2 {
+                font-size:2.3em;
+                text-transform:uppercase;
+                font-weight:600;
+                color:#286b91;
+                text-align:center;
+                padding:3vh 0 3vh 0;
+            }
+
+
+        }
+
+        & > section {
+            display:grid;
+            row-gap: 1vh;
+            padding: 1vh 0 2vh 0;
+
+            & > section {
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 1vw;
+                width:95%;
+                justify-self:center;
+                align-self:center;
+
+                & > section:first-of-type {
+                    align-self:center;
+                    justify-self: center;
+
+                    & > figure {
+                        & > img {
+                            width:100%;
+                        }
+                    }
+
+                }
+
+                & > section:last-of-type {
+                    display:grid;
+
+
+                    & > header {
+                        text-align:left;
+                        font-size:1.3em;
+                        font-weight:bold;
+                        height:10%;
+                        align-self:center;
+                    }
+
+                    & > p {
+                        align-self:center;
+                        justify-self:center;
+                        text-align:left;
+                        height:90%;
+                    }
+                }
+
+                }
+
+            & > section:nth-of-type(2) {
+
+                & > section:first-of-type {
+                    grid-column:2/3;
+                }
+
+                & > section:last-of-type {
+                    grid-column:1/2;
+                    grid-row:1/2;
+                }
+
+            }
+        }
+
+    }
+
+    & > footer {
+        height:10vh;
+    }
+}
